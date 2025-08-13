@@ -274,7 +274,7 @@ export default {
   },
   async fetch() {
     const gamesResponse = await this.$axios.$get(
-      `./ghosteshop.json`
+      `https://ghosteshop.com/ghosteshop.json`
     )
     this.games = gamesResponse
     this.games.storeContent = this.games.storeContent.reverse()
